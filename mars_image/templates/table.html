@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <table border= "0">
+<tr align="left">
+   <td>Цвет стен</td>
+   <td> Эмблема </td> </tr>
+<tr align="right">
+   <td> <img src="/static/img/sex.png"> </td>
+    {% if ufo == 'yes' %}
+    <td>  <img src="/static/img/big.jpg"></td>
+        {% else %}
+    <td>  <img src="/static/img/small.png"></td>
+    {%endif%}
+        </tr>
+</table>
+{% endblock %}
